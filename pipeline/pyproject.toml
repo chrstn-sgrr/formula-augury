@@ -1,0 +1,20 @@
+[project]
+name = "formula-augury-pipeline"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastf1>=3.8.3",
+    "numpy>=2.5.4",
+    "pandas>=2.3.3",
+    "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

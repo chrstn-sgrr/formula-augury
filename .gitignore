@@ -3,6 +3,8 @@
 __pycache__/
 *.py[cod]
 .fastf1cache/
+.pytest_cache/
+data/processed/
 
 # Node
 node_modules/
