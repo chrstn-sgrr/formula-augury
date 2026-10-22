@@ -1,17 +1,7 @@
-# formula-augury
+# Formula Augury
 
 Retrospective F1 race forecasts. Pick a completed race, see the predicted finishing order and win, podium, and points probabilities, click a driver for the reasoning, and compare the forecast with the actual result.
 
-## Status
-
-Phase 1. The Go API serves precomputed artifacts and the React UI renders the mock Barcelona forecast. The FastF1 pipeline and real model are next.
-
-## v1 scope
-
-- Race forecast only. No qualifying prediction or strategy simulator yet.
-- Dry, standard weekends only. Sprint weekends are excluded.
-- Training data is 2025 plus the 2026 races before the target race.
-- Python pipeline, Go API, React UI.
 
 ## Layout
 
@@ -64,7 +54,3 @@ python scripts/validate_artifact.py data/artifacts/2026-07-barcelona.json
 - `GET /healthz`
 - `GET /api/races`
 - `GET /api/races/{id}`
-
-## Non-goals for v1
-
-Live timing, wet races, safety cars, DNFs, qualifying prediction, strategy simulator, deployment, auth, database.
