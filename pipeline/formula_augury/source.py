@@ -46,7 +46,7 @@ def load_event(season: int, round_number: int, cache_dir: Path) -> EventData:
         raise SourceUnavailable("fastf1 is not installed; run `uv sync` in pipeline/") from error
 
     cache_dir.mkdir(parents=True, exist_ok=True)
-    fastf1.Cache.enable_cache(str(cache_dir))
+    fastf1.Cache.configure(cache_dir=str(cache_dir))
 
     try:
         schedule = fastf1.get_event_schedule(season, include_testing=False)
