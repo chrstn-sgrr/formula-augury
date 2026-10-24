@@ -9,7 +9,7 @@
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 900px 480px at 80% -8%, rgba(200, 247, 81, 0.07), transparent 66%),
+    radial-gradient(ellipse 900px 480px at 80% -8%, rgba(255, 30, 0, 0.09), transparent 66%),
     radial-gradient(ellipse 700px 480px at 0% 18%, rgba(86, 132, 255, 0.05), transparent 70%);
 }
 
@@ -44,7 +44,7 @@
   height: 30px;
   flex: 0 0 auto;
   color: var(--signal);
-  filter: drop-shadow(0 0 10px rgba(200, 247, 81, 0.22));
+  filter: drop-shadow(0 0 10px rgba(255, 30, 0, 0.32));
 }
 
 .brand-copy {
@@ -203,7 +203,7 @@
   width: 124px;
   height: 2px;
   background: var(--signal);
-  box-shadow: 0 0 16px rgba(200, 247, 81, 0.48);
+  box-shadow: 0 0 16px rgba(255, 30, 0, 0.48);
 }
 
 .hero-copy {
@@ -407,7 +407,7 @@
 }
 
 .metric-delta.positive {
-  color: var(--signal);
+  color: var(--positive);
 }
 
 .metric-delta.negative {
@@ -664,16 +664,21 @@
   gap: 5px;
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.1em;
-  color: var(--muted);
+  letter-spacing: 0.14em;
+  color: #9aa2ae;
   text-transform: uppercase;
 }
 
-.driver-sep {
-  color: var(--dim);
+.driver-number {
+  color: color-mix(in srgb, var(--team) 74%, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--team) 70%, transparent);
 }
 
-.driver-number {
+.driver-dash {
+  margin: 0 -3px;
   color: var(--dim);
 }
 
@@ -735,9 +740,9 @@
 }
 
 .actual-delta.up {
-  color: var(--signal);
-  border-color: rgba(200, 247, 81, 0.25);
-  background: rgba(200, 247, 81, 0.06);
+  color: var(--positive);
+  border-color: rgba(61, 220, 151, 0.25);
+  background: var(--positive-soft);
 }
 
 .actual-delta.down {
@@ -855,7 +860,7 @@
 }
 
 .factor-card.positive {
-  border-left-color: var(--signal);
+  border-left-color: var(--positive);
 }
 
 .factor-card.negative {
@@ -892,7 +897,7 @@
 }
 
 .factor-card.positive .factor-impact {
-  color: var(--signal);
+  color: var(--positive);
 }
 
 .factor-card.negative .factor-impact {
@@ -980,8 +985,8 @@
 }
 
 .detail-result-delta.up {
-  color: var(--signal);
-  border-color: rgba(200, 247, 81, 0.25);
+  color: var(--positive);
+  border-color: rgba(61, 220, 151, 0.25);
 }
 
 .detail-result-delta.down {

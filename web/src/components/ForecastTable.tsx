@@ -64,12 +64,12 @@ export function ForecastTable({ artifact, selectedDriver, onSelect }: ForecastTa
                         <div className="driver-text">
                           <div className="driver-primary">
                             <span className="driver-code">{driver.code}</span>
+                            <span className="driver-dash" aria-hidden="true">-</span>
                             <span className="driver-name">{driver.name}</span>
+                            <span className="driver-number">#{driver.number}</span>
                           </div>
                           <div className="driver-secondary">
                             <span className="driver-team">{driver.team}</span>
-                            <span className="driver-sep" aria-hidden="true">/</span>
-                            <span className="driver-number">#{driver.number}</span>
                           </div>
                         </div>
                       </div>

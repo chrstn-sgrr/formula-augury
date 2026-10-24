@@ -7,8 +7,10 @@
   --text: #f4f5f7;
   --muted: #8b929e;
   --dim: #5d6470;
-  --signal: #c8f751;
-  --signal-soft: rgba(200, 247, 81, 0.12);
+  --signal: #ff1e00;
+  --signal-soft: rgba(255, 30, 0, 0.12);
+  --positive: #3ddc97;
+  --positive-soft: rgba(61, 220, 151, 0.12);
   --warning: #f7b955;
   --danger: #ff6b5f;
   --font-display: 'Barlow Condensed', 'Arial Narrow', 'Helvetica Neue', sans-serif;

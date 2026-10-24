@@ -142,8 +142,7 @@ function App() {
 function BrandMark() {
   return (
     <svg className="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
-      <path d="M3.5 31 13.8 5h8.4L32.5 31h-7l-1.8-5.2H12.3L10.5 31h-7Z" fill="currentColor" />
-      <path d="M14.3 19.6h7.4L18 9.8l-3.7 9.8Z" fill="var(--bg)" />
+      <path d="M11 8h14v5h-9v4h7v5h-7v6h-5z" fill="currentColor" />
     </svg>
   )
 }
